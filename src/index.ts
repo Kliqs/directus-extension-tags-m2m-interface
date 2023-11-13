@@ -56,6 +56,7 @@ export default defineInterface({
 					width: 'full',
 					interface: 'system-field',
 					options: {
+						collectionName: relations.m2o?.related_collection,
 						allowNone: false,
 						typeAllowList: ['string', 'integer', 'bigInteger'],
 						allowForeignKeys: false,
@@ -123,6 +124,7 @@ export default defineInterface({
 					width: 'half',
 					interface: 'system-field',
 					options: {
+						collectionName: relations.m2o?.related_collection,
 						allowPrimaryKey: true,
 						allowNone: true,
 					},
